@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  font-family: helvetica;
+}
+.background{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, blue, rgb(100, 2, 130));
+  padding: 50px;
+}
+.container{
+  background-color: white;
+  width: 90%;
+  max-width: 540px;
+  border-radius: 20px;
+  padding: 20px 30px 50px 30px;
+  margin: 10px auto;
+}
+h2{
+  display: flex;
+  padding: 10px 0 0 15px ;
+  margin-bottom: 20px;
+  align-items: center;
+  
+}
+h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+.insert{
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(209, 209, 209);
+}
+.insert input{
+  flex: 1;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 10px;
+}
+.insert button{
+  background-color: rgb(255, 98, 0);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  width: 80px;
+  padding: 10px;
+  cursor: pointer;
+}
+ul li{
+  position: relative;
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+}
+ul .select{
+  color: #555;
+  text-decoration: line-through;
+}
+ul .select::before{
+  background-image: url(images/checked.png);
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  left: 10px;
+  top: 7px;
+  background-image: url(images/unchecked.png);
+}
+ul li span{
+  position: absolute;
+  right: 40px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover{
+  background-color: #edeef0;
+  border-radius: 50%;
+}
